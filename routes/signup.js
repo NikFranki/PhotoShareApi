@@ -16,7 +16,6 @@ router.get('/', checkNotLogin, function (req, res, next) {
 router.post('/', function (req, res, next) {
   console.log('进来注册')
   console.log(req.body)
-  console.log(req.fields)
 
   const name = req.body.username
   const password = req.body.password
